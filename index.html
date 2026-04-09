@@ -1,51 +1,39 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>市场资讯周报</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>📊 市场资讯周报</h1>
-        <p>每周更新 · 聚焦竞品动态 · 政策法规 · 市场趋势</p>
-    </header>
-    
-    <nav>
-        <a href="#competitor">竞品动态</a>
-        <a href="#policy">政策法规</a>
-        <a href="#market">市场资讯</a>
-        <a href="#ai">AI 前沿</a>
-    </nav>
-    
-    <main>
-        <section id="competitor">
-            <h2>💼 竞品企业动态</h2>
-            <div class="news-grid" id="competitor-news"></div>
-        </section>
+
+    <div class="container">
         
-        <section id="policy">
-            <h2>📜 政策法规</h2>
-            <div class="news-list" id="policy-news"></div>
-        </section>
+            <h1>📰 市场资讯周报</h1>
+            <p>聚焦竞品动态 · 追踪政策法规 · 洞察市场趋势 · AI 前沿观察</p>
         
-        <section id="market">
-            <h2>📈 市场资讯</h2>
-            <div class="news-grid" id="market-news"></div>
-        </section>
+
         
-        <section id="ai">
-            <h2>🤖 AI 前沿资讯 🔄自动更新</h2>
-            <div class="news-grid" id="ai-news"></div>
-        </section>
-    </main>
+            <button class="nav-tab active">竞品企业动态</button>
+            <button class="nav-tab">政策法规</button>
+            <button class="nav-tab">市场资讯</button>
+            <button class="nav-tab">AI 前沿</button>
+        
+
+        
+            
+                <div class="news-grid" id="competitor-grid"></div>
+            
+
+            
+                <div class="news-grid" id="policy-grid"></div>
+            
+
+            
+                <div class="news-grid" id="market-grid"></div>
+            
+
+            
+                <div class="news-grid" id="ai-grid"></div>
+            
+        
+
+        
+            <p>© 2026 Stellar News | 数据更新于 <span id="last-update"></span></p>
+        
+    </div>
+
     
-    <footer>
-        <p>更新时间：<span id="update-time"></span></p>
-        <p>数据来源：市场资讯分享平台</p>
-    </footer>
-    
-    <script src="js/main.js"></script>
-</body>
-</html>
+
